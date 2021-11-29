@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--必须先导入JQuery, 再导入bootstrap的css文件和js文件-->
+    <script src="JQuery/JQuery.js"></script>
+    <link rel="stylesheet" href="bootstrap-3.4.1-dist/css/bootstrap.min.css" />
+    <script src="bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+    <style>
+      /* div[class|='col'] {
+        border: 2px solid black;
+      } */
+
+      .container-mine{
+        background-color: aquamarine;
+        height: 50px;
+      }
+      /* 顺序不能变，因为后面的样式会覆盖前面的样式 */
+      @media screen and (min-width: 760px) {
+        .container-mine {
+          width: 760px;
+        }
+      }
+      @media screen and (min-width: 960px) {
+        .container-mine {
+          width: 960px;
+        }
+      }
+      @media screen and (min-width: 1120px) {
+        .container-mine {
+          width: 1120px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10">col-lg-10</div>
+        <div class="col-lg-2">col-lg-2</div>
+      </div>
+    </div>
+    <div class="container-mine"></div>
+
+    <div class="container">
+      <div class="row">
+        
+
+        
+
+        
+
+        <div class="col-lg-3 col-lg-push-9 col-md-4 col-md-push-8 col-sm-6 col-sm-push-6">
+          <div class="thumbnail">
+            <img src="..." alt="...">
+            <div class="caption">
+              <h3>4Thumbnail label</h3>
+              <p>...</p>
+              <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-lg-push-3 col-md-4 col-md-pull-0 col-sm-6 col-sm-pull-6">
+          <div class="thumbnail">
+            <img src="..." alt="...">
+            <div class="caption">
+              <h3>3Thumbnail label</h3>
+              <p>...</p>
+              <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-lg-pull-3 col-md-4 col-md-pull-8 col-sm-6 col-sm-push-6">
+          <div class="thumbnail">
+            <img src="..." alt="...">
+            <div class="caption">
+              <h3>2Thumbnail label</h3>
+              <p>...</p>
+              <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-lg-pull-9 col-md-4 col-md-push-0 col-sm-6 col-sm-pull-6">
+          <div class="thumbnail">
+            <img src="..." alt="...">
+            <div class="caption">
+              <h3>1Thumbnail label</h3>
+              <p>...</p>
+              <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+            </div>
+          </div>
+        </div>
+    </div>
+  </body>
+</html>
